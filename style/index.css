@@ -2,7 +2,9 @@
     max-width: 100%;
     max-height: 100%;
 } */
-
+body {
+    background-color: #b1f3de;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
