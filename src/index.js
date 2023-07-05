@@ -8,19 +8,25 @@ const options = {
 };
 
 function fetchRecipes() {
-  fetch(url, options) // Include options in the fetch request
+  fetch(url, options)
     .then((response) => response.json())
     .then((data) => {
       const recipeList = document.getElementById('recipes');
       recipeList.innerHTML = '';
 
-      data.results.forEach((recipe) => { // Access the recipes from 'results' instead of 'meals'
+      data.results.forEach((recipe) => {
         const recipeName = recipe.name;
+        const recipeImage = recipe.thumbnail_url;
+
         const listItem = document.createElement('li');
         listItem.classList.add('recipe', 'item');
         listItem.textContent = recipeName;
 
-        // Add click event listener to each recipe item
+        const image = document.createElement('img');
+        image.setAttribute('src', recipeImage);
+        image.setAttribute('alt', 'Recipe Image');
+        listItem.appendChild(image);
+
         listItem.addEventListener('click', function() {
           displayRecipeDetails(recipe);
         });
@@ -34,7 +40,41 @@ function fetchRecipes() {
 }
 
 function fetchFeaturedRecipe() {
-  fetch(url, options) // Include options in the fetch request
+  fetch(url, options)
+    .then((response) => response.json())
+    .then((data) => {
+      const featuredRecipe = document.getElementById('featured-recipe');
+      const recipe = data.results[0];
+      
+      featuredRecipe.querySelector('h4').textContent = recipe.name;
+      featuredRecipe.querySelector('p').textContent = recipe.description;
+
+      const image = document.createElement('img');
+      image.setAttribute('src', recipe.thumbnail_url);
+      image.setAttribute('alt', 'Recipe Image');
+      featuredRecipe.querySelector('img').replaceWith(image);
+
+      const saveIcon = document.createElement('i');
+      saveIcon.classList.add('far', 'fa-save', 'icon');
+      saveIcon.addEventListener('click', function() {
+        saveRecipe(recipe);
+      });
+      featuredRecipe.appendChild(saveIcon);
+
+      const favoriteIcon = document.createElement('i');
+      favoriteIcon.classList.add('far', 'fa-heart', 'icon');
+      favoriteIcon.addEventListener('click', function() {
+        toggleFavorite(recipe);
+      });
+      featuredRecipe.appendChild(favoriteIcon);
+    })
+    .catch((error) => {
+      console.log('Error fetching featured recipe:', error);
+    });
+}
+
+function fetchFeaturedRecipe() {
+  fetch(url, options) 
     .then((response) => response.json())
     .then((data) => {
       const featuredRecipe = document.getElementById('featured-recipe');
@@ -76,9 +116,10 @@ function saveRecipe(recipe) {
   console.log('Recipe saved:', recipe);
 }
 
-function toggleFavorite(recipe) {
+function toggleFavorite(recipe, favoriteIcon) {
   // Toggle the favorite state of the recipe
   console.log('Recipe toggled as favorite:', recipe);
+  favoriteIcon.classList.toggle('fas');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
