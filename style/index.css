@@ -1,9 +1,13 @@
-/* .nav img {
-    max-width: 100%;
-    max-height: 100%;
-} */
+.nav-background {
+    background-image: -moz-linear-gradient();
+}
 body {
     background-color: #b1f3de;
+}
+
+img {
+    max-width: 10%;
+    max-height: 10%
 }
 .container {
     display: grid;
@@ -52,17 +56,24 @@ body {
     background: #7b99db;  
     color: white;  
   }  
-  .fa-twitter {  
-    background: #55ACEE;  
-    color: white;  
-  }
+    
     .fa-instagram {  
-    background: #125688;  
-    color: rgb(237, 142, 142); 
+    background: #de2108;  
+    color: rgb(240, 178, 223); 
 } 
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 40px ;
+    margin-right: 20px;
+    color: #000000;
+    display: inline;
+    padding-top: 5px;
+   transition:transform 0.5s;
+}
 footer {
     background-color: #f5f5f5;
-    padding: 40px;
+    padding: 1px;
     text-align: center;
     margin:1cm;
     
