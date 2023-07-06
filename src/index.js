@@ -13,14 +13,40 @@ function fetchRecipes() {
 
         const listItem = document.createElement('li');
         listItem.classList.add('recipe', 'item');
-        listItem.textContent = recipeName;
 
         const image = document.createElement('img');
         image.setAttribute('src', recipeImage);
         image.setAttribute('alt', 'Recipe Image');
         listItem.appendChild(image);
 
-        listItem.addEventListener('click', function() {
+        const recipeDetails = document.createElement('div');
+        recipeDetails.classList.add('recipe-details');
+
+        const recipeTitle = document.createElement('h4');
+        recipeTitle.textContent = recipeName;
+        recipeDetails.appendChild(recipeTitle);
+
+        const ingredientsList = document.createElement('ul');
+        ingredientsList.classList.add('ingredients-list');
+        recipe.ingredients.forEach((ingredient) => {
+          const ingredientItem = document.createElement('li');
+          ingredientItem.textContent = ingredient;
+          ingredientsList.appendChild(ingredientItem);
+        });
+        recipeDetails.appendChild(ingredientsList);
+
+        const instructionsList = document.createElement('ol');
+        instructionsList.classList.add('instructions-list');
+        recipe.instructions.forEach((instruction) => {
+          const instructionItem = document.createElement('li');
+          instructionItem.textContent = instruction;
+          instructionsList.appendChild(instructionItem);
+        });
+        recipeDetails.appendChild(instructionsList);
+
+        listItem.appendChild(recipeDetails);
+
+        listItem.addEventListener('click', function () {
           displayRecipeDetails(recipe);
         });
 
@@ -88,6 +114,15 @@ function displayRecipeDetails(recipe) {
     const directionItem = document.createElement('li');
     directionItem.textContent = step;
     directionsList.appendChild(directionItem);
+  });
+
+  const instructionsList = featuredRecipe.querySelector('.instructions');
+  instructionsList.innerHTML = '';
+
+  recipe.instructions.forEach((step) => {
+    const instructionItem = document.createElement('li');
+    instructionItem.textContent = step;
+    instructionsList.appendChild(instructionItem);
   });
 }
 
