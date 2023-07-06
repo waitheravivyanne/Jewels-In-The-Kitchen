@@ -16,7 +16,7 @@ body {
   /* Landing Page Styles */
   
   header {
-    background-color: #580758;
+    background-color: #466c33;
     padding: 20px;
     color: #fff;
   }
@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #69226f;
   }
   nav img {
     width: 30%;
@@ -125,7 +126,7 @@ body {
   /* Footer Styles */
   
   footer {
-    background-color: #590951;
+    background-color: #6b3879;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -207,5 +208,19 @@ body {
       }
       
 
-
-
+      .action-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border: none;
+        background-color: transparent;
+        color: #000;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      .action-button i {
+        margin-right: 4px;
+      }
+      

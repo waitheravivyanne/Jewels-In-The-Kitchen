@@ -70,6 +70,25 @@
     function goBack(){
       window.history.back();
     }
+    const likeIcon = document.querySelector('.like-icon');
+    const saveIcon = document.querySelector('.save-icon');
+    const favoriteIcon = document.querySelector('.favorite-icon');
+
+    likeIcon.addEventListener('click', toggleLike);
+    saveIcon.addEventListener('click', saveRecipe);
+    favoriteIcon.addEventListener('click', toggleFavorite);
+
+    function toggleLike() {
+      likeIcon.classList.toggle('fas');
+    }
+
+    function saveRecipe() {
+      console.log('Recipe saved');
+    }
+
+    function toggleFavorite() {
+      favoriteIcon.classList.toggle('fas');
+    }
   </script>
 </body>
 
