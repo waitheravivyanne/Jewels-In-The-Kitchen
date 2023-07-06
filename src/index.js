@@ -25,34 +25,26 @@ function fetchRecipes() {
         const recipeTitle = document.createElement('h4');
         recipeTitle.textContent = recipeName;
         recipeDetails.appendChild(recipeTitle);
-
-        const ingredientsList = document.createElement('ul');
-        ingredientsList.classList.add('ingredients-list');
-        recipe.ingredients.forEach((ingredient) => {
-          const ingredientItem = document.createElement('li');
-          ingredientItem.textContent = ingredient;
-          ingredientsList.appendChild(ingredientItem);
+        const directionsList = document.createElement('ol');
+        directionsList.classList.add('directions');
+        recipe.instructions.forEach((step) => {
+          const directionItem = document.createElement('li');
+          directionItem.textContent = step;
+          directionsList.appendChild(directionItem);
         });
-        recipeDetails.appendChild(ingredientsList);
-
-        const instructionsList = document.createElement('ol');
-        instructionsList.classList.add('instructions-list');
-        recipe.instructions.forEach((instruction) => {
-          const instructionItem = document.createElement('li');
-          instructionItem.textContent = instruction;
-          instructionsList.appendChild(instructionItem);
-        });
-        recipeDetails.appendChild(instructionsList);
+        recipeDetails.appendChild(directionsList);
 
         listItem.appendChild(recipeDetails);
 
         listItem.addEventListener('click', function () {
-          displayRecipeDetails(recipe);
+          displayRecipeDetails(recipeDetails);
         });
 
         recipeList.appendChild(listItem);
       });
     })
+
+        
     .catch((error) => {
       console.log('Error fetching recipes:', error);
     });
@@ -64,6 +56,7 @@ function fetchFeaturedRecipe() {
     .then((data) => {
       const featuredRecipe = document.getElementById('featured-recipe');
       const recipe = data.recipes[0];
+      data.recipes.shift();
 
       featuredRecipe.querySelector('h4').textContent = recipe.name;
       featuredRecipe.querySelector('p').textContent = recipe.description;
@@ -92,38 +85,8 @@ function fetchFeaturedRecipe() {
     });
 }
 
-function displayRecipeDetails(recipe) {
-  const featuredRecipe = document.getElementById('featured-recipe');
-  featuredRecipe.querySelector('h4').textContent = recipe.name;
-  featuredRecipe.querySelector('p').textContent = recipe.description;
-  featuredRecipe.querySelector('img').setAttribute('src', recipe.image);
-
-  const ingredientsList = featuredRecipe.querySelector('.ingredients');
-  ingredientsList.innerHTML = '';
-
-  recipe.ingredients.forEach((ingredient) => {
-    const ingredientItem = document.createElement('li');
-    ingredientItem.textContent = ingredient;
-    ingredientsList.appendChild(ingredientItem);
-  });
-
-  const directionsList = featuredRecipe.querySelector('.directions');
-  directionsList.innerHTML = '';
-
-  recipe.instructions.forEach((step) => {
-    const directionItem = document.createElement('li');
-    directionItem.textContent = step;
-    directionsList.appendChild(directionItem);
-  });
-
-  const instructionsList = featuredRecipe.querySelector('.instructions');
-  instructionsList.innerHTML = '';
-
-  recipe.instructions.forEach((step) => {
-    const instructionItem = document.createElement('li');
-    instructionItem.textContent = step;
-    instructionsList.appendChild(instructionItem);
-  });
+function displayRecipeDetails(recipeDetails) {
+  recipeDetails.classList.toggle(`visible`);
 }
 
 function saveRecipe(recipe) {
@@ -133,20 +96,31 @@ function saveRecipe(recipe) {
 function toggleFavourite(recipe, favouriteIcon) {
   favouriteIcon.classList.toggle('fas');
 }
+function removeDisplayedRecipe() {
+  const recipeList = document.getElementById('recipes');
+  const recipeItems = recipeList.getElementsByClassName('recipe');
 
-document.addEventListener('DOMContentLoaded', function() {
+  // Remove the first item from the list
+  if (recipeItems.length > 0) {
+    recipeList.removeChild(recipeItems[0]);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  removeDisplayedRecipe();
   fetchRecipes();
   fetchFeaturedRecipe();
 });
 
-document.getElementById('search-form').addEventListener('submit', function(event) {
+document.getElementById('search-form').addEventListener('submit', function (event) {
   event.preventDefault();
   const searchInput = document.getElementById('search-input').value.toLowerCase();
   const recipeList = document.getElementById('recipes');
   const recipes = recipeList.getElementsByClassName('recipe');
 
   Array.from(recipes).forEach((recipe) => {
-    const recipeName = recipe.textContent.toLowerCase();
+    const recipeName = recipe.querySelector('h4').textContent.toLowerCase();
     if (recipeName.includes(searchInput)) {
       recipe.style.display = 'block';
     } else {

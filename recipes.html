@@ -11,16 +11,22 @@
 
 <body>
   <nav>
+    <a href="#" class="back-button">
+      <i class="fas fa-chevron-left"></i>
+    </a>
     <h1>JEWELS-IN-THE-KITCHEN</h1>
     <a href="#" class="nav-bar-image">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpY6Vjt8xmksn3J9yADjrkTQNnoSN41YBOQQ&usqp=CAU" alt="Logo">
       <img src="https://image.shutterstock.com/image-photo/healthy-food-clean-eating-selection-260nw-722718082.jpg" alt="Background Image">
+    
+    
     </a>
   </nav>
 
   <div class="container">
     <div class="left-column">
       <h3>Recipes</h3>
+      
       <form id="search-form">
         <input type="text" id="search-input" placeholder="Search for recipes...">
         <button type="submit">Search</button>
@@ -44,6 +50,13 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   <script src="src/index.js"></script>
+  <script>
+    const backButton = document.querySelector('.back-button');
+    backButton.addEventListener('click', goBack);
+    function goBack(){
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>
