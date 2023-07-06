@@ -1,0 +1,173 @@
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Landing Page Styles */
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .hero {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  /* Recipes Page Styles */
+  
+  .recipes-section {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .left-column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #search-form {
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  #recipes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .recipe img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .recipe h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav h1 {
+      margin-bottom: 10px;
+    }
+  
+    .hero h2 {
+      font-size: 24px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+    }
+  
+    .left-column h3 {
+      font-size: 20px;
+    }
+  
+    #search-input {
+      width: 150px;
+    }
+  
+    .recipe {
+      margin-bottom: 20px;
+    }
+  }
+  
