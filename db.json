@@ -1,0 +1,442 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Spaghetti Bolognese",
+            "ingredients": [
+                "250g spaghetti",
+                "300g ground beef",
+                "1 onion, chopped",
+                "2 cloves of garlic, minced",
+                "400g canned tomatoes",
+                "1 tablespoon tomato paste",
+                "1 teaspoon dried oregano",
+                "1 teaspoon dried basil",
+                "Salt and pepper to taste",
+                "Grated Parmesan cheese, for serving"
+            ],
+            "instructions": [
+                "Cook the spaghetti according to the package instructions.",
+                "In a large pan, cook the ground beef, onion, and garlic until the beef is browned and the onion is translucent.",
+                "Add the canned tomatoes, tomato paste, oregano, basil, salt, and pepper. Simmer for 20 minutes.",
+                "Serve the Bolognese sauce over the cooked spaghetti and sprinkle with grated Parmesan cheese."
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Chicken Stir-Fry",
+            "ingredients": [
+                "2 boneless, skinless chicken breasts, thinly sliced",
+                "1 red bell pepper, sliced",
+                "1 yellow bell pepper, sliced",
+                "1 onion, sliced",
+                "2 cloves of garlic, minced",
+                "2 tablespoons soy sauce",
+                "1 tablespoon oyster sauce",
+                "1 tablespoon hoisin sauce",
+                "1 tablespoon sesame oil",
+                "1/2 teaspoon red pepper flakes",
+                "Cooked rice, for serving"
+            ],
+            "instructions": [
+                "Heat the sesame oil in a large pan or wok over medium-high heat.",
+                "Add the chicken and cook until browned and cooked through. Remove from the pan.",
+                "In the same pan, add the bell peppers, onion, and garlic. Stir-fry for 3-4 minutes until the vegetables are tender-crisp.",
+                "In a small bowl, whisk together the soy sauce, oyster sauce, hoisin sauce, and red pepper flakes.",
+                "Add the cooked chicken back to the pan and pour the sauce over the chicken and vegetables. Stir-fry for another 2 minutes.",
+                "Serve the chicken stir-fry over cooked rice."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Chocolate Chip Cookies",
+            "ingredients": [
+                "1 cup unsalted butter, softened",
+                "1 cup granulated sugar",
+                "1 cup brown sugar",
+                "2 large eggs",
+                "1 teaspoon vanilla extract",
+                "3 cups all-purpose flour",
+                "1 teaspoon baking soda",
+                "1/2 teaspoon salt",
+                "2 cups chocolate chips"
+            ],
+            "instructions": [
+                "Preheat the oven to 375°F (190°C).",
+                "In a large bowl, cream together the butter, granulated sugar, and brown sugar until light and fluffy.",
+                "Beat in the eggs one at a time, then stir in the vanilla.",
+                "In a separate bowl, combine the flour, baking soda, and salt. Gradually add the dry ingredients to the creamed mixture and mix well.",
+                "Fold in the chocolate chips.",
+                "Drop rounded tablespoonfuls of dough onto ungreased baking sheets.",
+                "Bake for 8 to 10 minutes or until lightly golden brown.",
+                "Allow cookies to cool on baking sheets for 5 minutes before transferring to wire racks to cool completely."
+            ]
+        },
+      
+       
+          {
+            "id": 4,
+            "name": "Lemon Herb Roasted Chicken",
+            "image": "https://example.com/images/lemon_herb_roasted_chicken.jpg",
+            "ingredients": [
+                "1 whole chicken",
+                "2 lemons",
+                "4 cloves of garlic, minced",
+                "2 tablespoons fresh rosemary, chopped",
+                "2 tablespoons fresh thyme, chopped",
+                "2 tablespoons olive oil",
+                "Salt and pepper to taste"
+            ],
+            "instructions": [
+                "Preheat the oven to 425°F (220°C).",
+                "Rinse the chicken and pat it dry with paper towels.",
+                "In a small bowl, mix together the minced garlic, chopped rosemary, chopped thyme, olive oil, salt, and pepper.",
+                "Rub the mixture all over the chicken, including under the skin and inside the cavity.",
+                "Slice one lemon and place the slices and the remaining lemon inside the chicken cavity.",
+                "Tie the chicken legs together with kitchen twine.",
+                "Place the chicken on a rack in a roasting pan and roast for about 1 hour, or until the internal temperature reaches 165°F (75°C) and the skin is golden brown.",
+                "Let the chicken rest for 10 minutes before carving. Serve with roasted vegetables or your choice of sides."
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Honey Mustard Chicken",
+            "image": "https://example.com/images/honey_mustard_chicken.jpg",
+            "ingredients": [
+                "4 boneless, skinless chicken breasts",
+                "1/4 cup Dijon mustard",
+                "2 tablespoons honey",
+                "1 tablespoon olive oil",
+                "1 clove of garlic, minced",
+                "1 teaspoon dried thyme",
+                "Salt and pepper to taste"
+            ],
+            "instructions": [
+                "In a small bowl, whisk together the Dijon mustard, honey, olive oil, minced garlic, dried thyme, salt, and pepper.",
+                "Place the chicken breasts in a resealable plastic bag and pour the marinade over the chicken.",
+                "Seal the bag and massage the chicken to coat it with the marinade. Marinate in the refrigerator for at least 30 minutes, or up to 24 hours for maximum flavor.",
+                "Preheat the grill or grill pan over medium-high heat.",
+                "Remove the chicken from the marinade, allowing any excess marinade to drip off.",
+                "Grill the chicken for 6-8 minutes per side, or until cooked through and no longer pink in the center.",
+                "Remove from the grill and let the chicken rest for a few minutes before serving. Serve with your choice of sides."
+            ]
+        },
+          {
+            "id": 6,
+            "name": "Margherita Pizza",
+            "image": "https://example.com/images/margherita_pizza.jpg",
+            "ingredients": [
+                "1 pizza dough",
+                "1/2 cup marinara sauce",
+                "2 cups shredded mozzarella cheese",
+                "Fresh basil leaves",
+                "Extra virgin olive oil",
+                "Salt and pepper to taste"
+            ],
+            "instructions": [
+                "Preheat the oven to the temperature recommended for the pizza dough.",
+                "Roll out the pizza dough into your desired shape and thickness.",
+                "Spread the marinara sauce evenly over the dough, leaving a border for the crust.",
+                "Sprinkle the shredded mozzarella cheese over the sauce.",
+                "Tear the fresh basil leaves and distribute them over the cheese.",
+                "Drizzle olive oil over the pizza and season with salt and pepper.",
+                "Bake the pizza in the preheated oven for the recommended time or until the crust is golden brown and the cheese is melted and bubbly.",
+                "Remove from the oven, let it cool slightly, and slice before serving."
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Tiramisu",
+            "image": "https://example.com/images/tiramisu.jpg",
+            "ingredients": [
+                "6 egg yolks",
+                "3/4 cup granulated sugar",
+                "2/3 cup milk",
+                "1 1/4 cups heavy cream",
+                "8 ounces mascarpone cheese",
+                "1 teaspoon vanilla extract",
+                "24 ladyfingers",
+                "1 cup brewed coffee, cooled",
+                "2 tablespoons unsweetened cocoa powder"
+            ],
+            "instructions": [
+                "In a heatproof bowl, whisk together the egg yolks and sugar until well combined.",
+                "Place the bowl over a saucepan of simmering water, making sure the bottom of the bowl doesn't touch the water.",
+                "Cook the mixture, whisking constantly, until it thickens and becomes pale yellow in color. This usually takes about 5 minutes.",
+                "Remove the bowl from the heat and whisk in the milk. Let the mixture cool to room temperature.",
+                "In a separate bowl, whip the heavy cream until stiff peaks form.",
+                "Gently fold the whipped cream into the cooled egg yolk mixture until well combined.",
+                "In another bowl, beat the mascarpone cheese and vanilla extract until smooth.",
+                "Fold themascarpone mixture into the egg yolk and cream mixture until fully incorporated.",
+                "In a shallow dish, pour the cooled brewed coffee.",
+                "Dip each ladyfinger into the coffee, allowing them to soak for a few seconds on each side.",
+                "Arrange a layer of soaked ladyfingers in the bottom of a serving dish or individual serving glasses.",
+                "Spread a layer of the mascarpone mixture over the ladyfingers.",
+                "Repeat the layers until all the ladyfingers and mascarpone mixture are used, ending with a layer of mascarpone mixture on top.",
+                "Sift the cocoa powder evenly over the top layer of mascarpone.",
+                "Cover the dish with plastic wrap and refrigerate for at least 4 hours, or overnight, to allow the flavors to meld and the tiramisu to set.",
+                "Before serving, garnish with additional cocoa powder or grated chocolate, if desired.",
+                "Serve chilled and enjoy!"
+            ]
+        },
+          
+         
+              {
+            "id": 8,
+            "name": "Ugali and Sukuma Wiki",
+            "image": "https://example.com/images/ugali_sukuma_wiki.jpg",
+            "ingredients": [
+                "2 cups maize flour",
+                "4 cups water",
+                "1 bunch sukuma wiki (collard greens)",
+                "2 tablespoons vegetable oil",
+                "1 onion, chopped",
+                "2 tomatoes, diced",
+                "2 cloves of garlic, minced",
+                "Salt to taste"
+            ],
+            "instructions": [
+                "In a large pot, bring the water to a boil.",
+                "Gradually add the maize flour to the boiling water while continuously stirring to prevent lumps from forming.",
+                "Reduce the heat to low and continue stirring until the mixture thickens and forms a stiff consistency. This is ugali.",
+                "In a separate pan, heat the vegetable oil and sauté the onions and garlic until they are golden brown.",
+                "Add the diced tomatoes and cook until they soften.",
+                "Chop the sukuma wiki into small pieces and add them to the pan. Cook until the greens wilt and become tender.",
+                "Season with salt to taste.",
+                "Serve the ugali and sukuma wiki together as a traditional Kenyan meal."
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Nyama Choma",
+            "image": "https://example.com/images/nyama_choma.jpg",
+            "ingredients": [
+                "2 pounds beef or goat meat, cut into chunks",
+                "2 tablespoons vegetable oil",
+                "1 onion, finely chopped",
+                "2 cloves of garlic, minced",
+                "1 teaspoon paprika",
+                "1 teaspoon cayenne pepper",
+                "1 teaspoon black pepper",
+                "Salt to taste"
+            ],
+            "instructions": [
+                "In a bowl, combine the vegetable oil, onion, garlic, paprika, cayenne pepper, black pepper, and salt to make a marinade.",
+                "Add the meat chunks to the marinade and mix well to ensure the meat is coated evenly. Let it marinate for at least 2 hours, or overnight for best results.",
+                "Preheat the grill or barbecue to medium-high heat.",
+                "Thread the meat onto skewers and place them on the grill.",
+                "Grill the meat for about 8-10 minutes per side, or until it is cooked to your desired level of doneness.",
+                "Remove the skewers from the grill and let the meat rest for a few minutes before serving.",
+                "Serve the nyama choma with your favorite Kenyan side dishes, such as ugali, sukuma wiki, or kachumbari (Kenyan salsa)."
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Mandazi",
+            "image": "https://example.com/images/mandazi.jpg",
+            "ingredients": [
+                "3 cups all-purpose flour",
+                "1/4 cup granulated sugar",
+                "1 teaspoon baking powder",
+                "1/4 teaspoon salt",
+                "1/2 teaspoon ground cardamom",
+                "1/2 cup coconut milk",
+                "1/4 cup water",
+                "1 tablespoon vegetable oil",
+                "Oil for deep frying"
+            ],
+            "instructions": [
+                "In a large bowl, whisk together the flour, sugar, baking powder, salt, and ground cardamom.",
+                "In a separate bowl, combine the coconut milk, water, and vegetable oil.",
+                "Pour the wet ingredients into the dry ingredients and mix until a soft dough forms.",
+                "Knead the dough on a lightly floured surface until it becomes smooth and elastic, about 5-7 minutes.",
+                "Cover the dough with a clean kitchen towel and let it rest for 30 minutes.",
+                "Heat the oil for deep frying in a large, deep pot or skillet over medium heat. The oil should be about 2-3 inches deep.",
+                "While the oil is heating, roll out the dough to about 1/4 inch thickness.",
+                "Cut the dough into desired shapes, such as triangles or squares.",
+                "Carefully add the mandazi to the hot oil, a few at a time, and fry until they turn golden brown on both sides. Flip them occasionally to ensure even browning.",
+                "Once cooked, remove the mandazi from the oil using a slotted spoon and transfer them to a paper towel-lined plate to drain excess oil.",
+                "Repeat the frying process until all the dough is used.",
+                "Serve the mandazi warm as a snack or breakfast treat. They can be enjoyed plain or dusted with powdered sugar."
+            ]
+        },
+        {
+           
+              
+                "id": 11,
+                "name": "Pilau",
+                "image": "https://example.com/images/pilau.jpg",
+                "ingredients": [
+                  "2 cups basmati rice",
+                  "500g bone-in chicken, cut into pieces",
+                  "2 onions, finely chopped",
+                  "4 cloves of garlic, minced",
+                  "1 tablespoon ginger paste",
+                  "2 tomatoes, diced",
+                  "2 tablespoons pilau masala",
+                  "1 teaspoon cumin seeds",
+                  "1 teaspoon turmeric powder",
+                  "4 cups chicken broth",
+                  "4 tablespoons vegetable oil",
+                  "Salt to taste"
+                ],
+                "instructions": [
+                  "In a large pot, heat the vegetable oil over medium heat.",
+                  "Add the cumin seeds and sauté until they start to sizzle.",
+                  "Add the chopped onions and cook until they become golden brown.",
+                  "Add the minced garlic and ginger paste. Cook for an additional minute.",
+                  "Add the chicken pieces and cook until they are browned on all sides.",
+                  "Stir in the pilau masala, turmeric powder, and diced tomatoes. Cook for a few minutes until the tomatoes soften.",
+                  "Add the basmati rice to the pot and stir well to coat it with the spices.",
+                  "Pour in the chicken broth and season with salt to taste.",
+                  "Bring the mixture to a boil, then reduce the heat to low and cover the pot with a tight-fitting lid.",
+                  "Simmer for about 20-25 minutes, or until the rice is tender and has absorbed the liquid.",
+                  "Remove from heat and let the pilau rest for 5 minutes before fluffing it with a fork.",
+                  "Serve the pilau hot as a main dish or as a side with your favorite accompaniments."
+                ]
+              },
+              {
+                "id": 12,
+                "name": "Nyama Ya Kukaanga",
+                "image": "https://example.com/images/nyama_ya_kukaanga.jpg",
+                "ingredients": [
+                  "1 kg beef or goat meat, cut into chunks",
+                  "3 onions, finely chopped",
+                  "4 cloves of garlic, minced",
+                  "1 tablespoon ginger paste",
+                  "2 tomatoes, diced",
+                  "2 tablespoons vegetable oil",
+                  "1 teaspoon paprika",
+                  "1 teaspoon curry powder",
+                  "1/2 teaspoon turmeric powder",
+                  "1/2 teaspoon black pepper",
+                  "Salt to taste"
+                ],
+                "instructions": [
+                  "In a large pan, heat the vegetable oil over medium heat.",
+                  "Add the chopped onions and cook until they become translucent.",
+                  "Add the minced garlic and ginger paste. Cook for an additional minute.",
+                  "Add the diced tomatoes and cook until they soften.",
+                  "Add the beef or goat meat chunks to the pan and cook until they are browned on all sides.",
+                  "Stir in the paprika, curry powder, turmeric powder, black pepper, and salt.",
+                  "Cover the pan and simmer for about 1 to 1.5 hours, or until the meat is tender.",
+                  "Check the seasoning and adjust as needed.",
+                  "Remove from heat and let the nyama ya kukaanga rest for a few minutes before serving.",
+                  "Serve the dish hot with rice, chapati, or ugali."
+                ]
+              },
+              {
+                "id": 13,
+                "name": "Mahamri",
+                "image": "https://example.com/images/mahamri.jpg",
+                "ingredients": [
+                  "4 cups all-purpose flour",
+                  "1/2 cup granulated sugar",
+                  "1 teaspoon active dry yeast",
+                  "1/2 teaspoon ground cardamom",
+                  "1/2 teaspoon ground cinnamon",
+                  "1/4 teaspoon salt",
+                  "1/2 cup coconut milk",
+                  "1/2 cup warm water",
+                  "2 tablespoons melted butter or vegetable oil",
+                  "Oil for frying"
+                ],
+                "instructions": [
+                  "In a large bowl, whisk together the flour, sugar, yeast, ground cardamom, ground cinnamon, and salt.",
+                  "Make a well in the center of the dry ingredients and pour in the coconut milk, warm water, and melted butter or vegetable oil.",
+                  "Mix the ingredients together to form a soft dough. Knead the dough for about 5-7 minutes until it becomes smooth and elastic.",
+                  "Cover the bowl with a clean kitchen towel and let the dough rise in a warm place for about 1-2 hours, or until it doubles in size.",
+                  "After the dough has risen, punch it down to release any air bubbles.",
+                  "On a lightly floured surface, roll out the dough to about 1/4 inch thickness.",
+                  "Cut the dough into small triangular or square shapes.",
+                  "In a large, deep pan or skillet, heat the oil for frying over medium heat.",
+                  "Carefully add the mahamri to the hot oil, a few at a time, and fry until they turn golden brown on both sides. Flip them occasionally to ensure even frying.",
+                  "Once cooked, remove the mahamri from the oil using a slotted spoon and transfer them to a paper towel-lined plate to drain excess oil.",
+                  "Repeat the frying process until all the dough is used.",
+                  "Serve the mahamri warm as a breakfast or snack. They are often enjoyed with tea or coffee.",
+                  "You can also serve them with coconut chutney or your favorite dipping sauce."
+                ]
+              },   
+              {
+                    "id": 14,
+                    "name": "Classic Cheeseburger",
+                    "image": "https://example.com/images/cheeseburger.jpg",
+                    "ingredients": [
+                      "1 pound ground beef",
+                      "Salt and pepper to taste",
+                      "4 hamburger buns",
+                      "4 slices of cheese",
+                      "Lettuce, tomato, onion, and condiments for toppings"
+                    ],
+                    "instructions": [
+                      "Preheat a grill or stovetop griddle over medium-high heat.",
+                      "Divide the ground beef into four equal portions and shape them into patties.",
+                      "Season the patties with salt and pepper on both sides.",
+                      "Place the patties on the grill or griddle and cook for about 4-5 minutes per side, or until they reach your desired level of doneness.",
+                      "During the last minute of cooking, place a slice of cheese on each patty and allow it to melt.",
+                      "Remove the patties from the heat and let them rest for a few minutes.",
+                      "Toast the hamburger buns on the grill or in a toaster.",
+                      "Assemble the burgers by placing a patty on the bottom half of each bun, and adding lettuce, tomato, onion, and your preferred condiments on top.",
+                      "Cover with the top half of the bun and serve the classic cheeseburgers immediately."
+                    ]
+                  },
+                  {
+                    "id": 15,
+                    "name": "BBQ Ribs",
+                    "image": "https://example.com/images/bbq_ribs.jpg",
+                    "ingredients": [
+                      "2 racks of baby back ribs",
+                      "Salt and pepper to taste",
+                      "2 cups BBQ sauce",
+                      "1/4 cup brown sugar",
+                      "1 tablespoon paprika",
+                      "1 tablespoon chili powder",
+                      "1 teaspoon garlic powder",
+                      "1 teaspoon onion powder"
+                    ],
+                    "instructions": [
+                      "Preheat the grill to medium heat.",
+                      "Season the ribs with salt and pepper on both sides.",
+                      "In a small bowl, mix together the brown sugar, paprika, chili powder, garlic powder, and onion powder to make a dry rub.",
+                      "Rub the dry rub mixture all over the ribs, coating them evenly.",
+                      "Place the ribs on the grill and cook for about 1.5-2 hours, or until they are tender and the meat easily pulls away from the bone.",
+                      "During the last 15 minutes of cooking, brush the ribs with BBQ sauce on both sides.",
+                      "Remove the ribs from the grill and let them rest for a few minutes.",
+                      "Slice the ribs between the bones and serve them with additional BBQ sauce on the side.",
+                      "Enjoy the flavorful and tender BBQ ribs!"
+                    ]
+                  },
+                  {
+                    "id": 16,
+                    "name": "Apple Pie",
+                    "image": "https://example.com/images/apple_pie.jpg",
+                    "ingredients": [
+                      "2 pie crusts (store-bought or homemade)",
+                      "6 cups thinly sliced apples",
+                      "3/4 cup granulated sugar",
+                      "2 tablespoons all-purpose flour",
+                      "1 teaspoon ground cinnamon",
+                      "1/4 teaspoon salt",
+                      "1 tablespoon lemon juice",
+                      "2 tablespoons unsalted butter, cut into small pieces",
+                      "1 egg, beaten",
+                      "1 tablespoon granulated sugar (for sprinkling)"
+                    ],
+                    "instructions": [
+                      "Preheat the oven to 425°F (220°C).",
+                      "Place one pie crust into a 9-inch pie dish and press it gently against the bottom and sides.",
+                      "In a large mixing bowl, combine the sliced apples, granulated sugar, flour, ground cinnamon, salt, and lemon juice. Toss until the apples are evenly coated.",
+                      "Pour the apple mixture into the pie crust-lined dish. Dot the top of the apples with the small pieces of butter.",
+                      "Place the second pie crust over the apple filling. Trim any excess crust and crimp the edges to seal the pie.",
+                      "Cut slits or create a decorative pattern on the top crust to allow steam to escape during baking.",
+                      "Brush the beaten egg over the top crust for a shiny finish. Sprinkle the tablespoon of granulated sugar over the top.",
+                      "Place the pie dish on a baking sheet to catch any potential spills and transfer it to the preheated oven.",
+                      "Bake for 15 minutes, then reduce the oven temperature to 375°F (190°C). Continue baking for an additional 40-45 minutes, or until the crust is golden brown and the filling is bubbly.",
+                      "Once baked, remove the pie from the oven and allow it to cool on a wire rack for at least 2 hours to allow the filling to set.",
+                      "Slice and serve the delicious homemade apple pie on its own or with a scoop of vanilla ice cream.",
+                      "Enjoy the classic American dessert!"
+                    ]
+                  }
+                                       
+    ]
+}

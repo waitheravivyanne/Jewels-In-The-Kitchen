@@ -5,28 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jewels-In-The-Kitchen</title>
+  <title>Jewels-In-The-Kitchen - Recipes</title>
   <link rel="stylesheet" href="style/index.css" />
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1>JEWELS-IN-THE-KITCHEN</h1>
-      <a href="#" class="nav-bar-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpY6Vjt8xmksn3J9yADjrkTQNnoSN41YBOQQ&usqp=CAU" alt="Logo">
-        <img src="https://image.shutterstock.com/image-photo/healthy-food-clean-eating-selection-260nw-722718082.jpg" alt="Background Image">
-      </a>
-    </nav>
-  </header>
+  <nav>
+    <h1>JEWELS-IN-THE-KITCHEN</h1>
+    <a href="#" class="nav-bar-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpY6Vjt8xmksn3J9yADjrkTQNnoSN41YBOQQ&usqp=CAU" alt="Logo">
+      <img src="https://image.shutterstock.com/image-photo/healthy-food-clean-eating-selection-260nw-722718082.jpg" alt="Background Image">
+    </a>
+  </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Welcome to Jewels-In-The-Kitchen</h2>
-      <p>Discover a world of delicious recipes</p>
-      <a href="recipes.html" class="cta-button">Get Started</a>
+  <div class="container">
+    <div class="left-column">
+      <h3>Recipes</h3>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for recipes...">
+        <button type="submit">Search</button>
+      </form>
+      <ul class="ui divided list" id="recipes"></ul>
     </div>
-  </section>
+  </div>
 
   <footer>
     <h3>Contact Us</h3>
