@@ -16,15 +16,22 @@
    <h1>JEWELS-IN-THE-KITCHEN</h1>
    <a href="#" class="nav-bar-image">
     <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpY6Vjt8xmksn3J9yADjrkTQNnoSN41YBOQQ&usqp=CAU">
+    <img src="https://image.shutterstock.com/image-photo/healthy-food-clean-eating-selection-260nw-722718082.jpg">
+    
+    
    </a>
 </nav>
    <div class="container">
     <div class="left-column">
         <h3>Recipes</h3>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for recipes...">
+            <button type="submit">Search</button>
+          </form>
         <div id="food list">
-        <ul class="ui divided list" id="recipes">
-            <li class="recipe item"></li>
-        </ul>
+        <ul class="ui divided list" id="recipes"></ul>
+            <!-- <li class="recipe item"></li> -->
+       
         </div>
     </div>
     <div class="right-column">
@@ -37,9 +44,7 @@
         
         <div class="favourites">
             <h3>Favorites</h3>
-           <ul id="favorite-recipes">
-
-           </ul>
+           <ul id="favorite-recipes"></ul>
         </div>
 
         <div class="saved">
