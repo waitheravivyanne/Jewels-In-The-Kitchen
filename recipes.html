@@ -57,6 +57,12 @@
       <a href="mailto:jewelsinthekitchen@yes.com"><i class="fas fa-envelope"></i></a>
       <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
     </div>
+    <form id="feedback-form">
+      <h4>Leave Feedback</h4>
+      <textarea id="feedback-input" placeholder="Enter your feedback here..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="success-message" id="success-message"></div>
     <div class="copyright">
       <p>&copy; 2023 Jewels-In-The-Kitchen</p>
     </div>
@@ -70,10 +76,30 @@
     function goBack(){
       window.history.back();
     }
+    const feedbackForm = document.querySelector('#feedback-form');
+  const feedbackInput = document.querySelector('#feedback-input');
+  const successMessage = document.querySelector('#success-message');
+
+  feedbackForm.addEventListener('submit', submitFeedback);
+
+  function submitFeedback(event) {
+    event.preventDefault();
+    const feedback = feedbackInput.value;
+
     const likeIcon = document.querySelector('.like-icon');
     const saveIcon = document.querySelector('.save-icon');
     const favoriteIcon = document.querySelector('.favorite-icon');
 
+    setTimeout(() => {
+      successMessage.textContent = 'Thank you for your feedback!';
+      feedbackInput.value = '';
+      successMessage.style.display = 'block';
+
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 3000);
+    }, 1000);
+  }
     likeIcon.addEventListener('click', toggleLike);
     saveIcon.addEventListener('click', saveRecipe);
     favoriteIcon.addEventListener('click', toggleFavorite);
