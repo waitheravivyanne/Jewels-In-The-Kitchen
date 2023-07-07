@@ -58,6 +58,7 @@ function fetchFeaturedRecipe() {
       const recipe = data.recipes[0];
       data.recipes.shift();
 
+      
       featuredRecipe.querySelector('h4').textContent = recipe.name;
       featuredRecipe.querySelector('p').textContent = recipe.description;
       featuredRecipe.querySelector('img').setAttribute('src', recipe.image);
