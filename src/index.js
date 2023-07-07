@@ -44,7 +44,7 @@ function fetchRecipes() {
       });
     })
 
-        
+
     .catch((error) => {
       console.log('Error fetching recipes:', error);
     });
@@ -87,6 +87,7 @@ function fetchFeaturedRecipe() {
 
 function displayRecipeDetails(recipeDetails) {
   recipeDetails.classList.toggle(`visible`);
+
 }
 
 function saveRecipe(recipe) {
@@ -127,4 +128,7 @@ document.getElementById('search-form').addEventListener('submit', function (even
       recipe.style.display = 'none';
     }
   });
+  if (!foundRecipe) {
+    alert('Recipe not found');
+  }
 });
