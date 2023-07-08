@@ -16,23 +16,11 @@
     </a>
     <h1>JEWELS-IN-THE-KITCHEN</h1>
     <a href="#" class="nav-bar-image">
-      <img src="https://w7.pngwing.com/pngs/613/206/png-transparent-barbecue-dinner-breakfast-food-restaurant-plates-food-text-breakfast-thumbnail.png" alt="Logo">
+      <img
+        src="https://w7.pngwing.com/pngs/613/206/png-transparent-barbecue-dinner-breakfast-food-restaurant-plates-food-text-breakfast-thumbnail.png"
+        alt="Logo">
       <img src="Rose Gold Black Elegant Luxury Circle Beauty Logo (1).png" alt="Background Image">
-    
-    <!-- Like Button -->
-<button class="action-button">
-  <i class="far fa-thumbs-up"></i> Like
-</button>
 
-<!-- Save Button -->
-<button class="action-button">
-  <i class="far fa-bookmark"></i> Save
-</button>
-
-<!-- Favorite Button -->
-<button class="action-button">
-  <i class="far fa-heart"></i> Favorite
-</button>
 
     </a>
   </nav>
@@ -40,7 +28,7 @@
   <div class="container">
     <div class="left-column">
       <h3>Recipes</h3>
-      
+
       <form id="search-form">
         <input type="text" id="search-input" placeholder="Search for recipes...">
         <button type="submit">Search</button>
@@ -73,38 +61,38 @@
   <script>
     const backButton = document.querySelector('.back-button');
     backButton.addEventListener('click', goBack);
-    function goBack(){
+    function goBack() {
       window.history.back();
     }
     const feedbackForm = document.querySelector('#feedback-form');
-  const feedbackInput = document.querySelector('#feedback-input');
-  const successMessage = document.querySelector('#success-message');
+    const feedbackInput = document.querySelector('#feedback-input');
+    const successMessage = document.querySelector('#success-message');
 
-  feedbackForm.addEventListener('submit', submitFeedback);
+    feedbackForm.addEventListener('submit', submitFeedback);
 
-  function submitFeedback(event) {
-    event.preventDefault();
-    const feedback = feedbackInput.value;
+    function submitFeedback(event) {
+      event.preventDefault();
+      const feedback = feedbackInput.value;
 
-    const likeIcon = document.querySelector('.like-icon');
-    const saveIcon = document.querySelector('.save-icon');
-    const favoriteIcon = document.querySelector('.favorite-icon');
-
-    setTimeout(() => {
-      successMessage.textContent = 'Thank you for your feedback!';
-      feedbackInput.value = '';
-      successMessage.style.display = 'block';
+      const likeIcon = document.querySelector('.like-icon');
+      const saveIcon = document.querySelector('.save-icon');
+      const favoriteIcon = document.querySelector('.favorite-icon');
 
       setTimeout(() => {
-        successMessage.style.display = 'none';
-      }, 3000);
-    }, 1000);
-  }
+        successMessage.textContent = 'Thank you for your feedback!';
+        feedbackInput.value = '';
+        successMessage.style.display = 'block';
+
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+        }, 3000);
+      }, 1000);
+    }
     likeIcon.addEventListener('click', toggleLike);
     saveIcon.addEventListener('click', saveRecipe);
     favoriteIcon.addEventListener('click', toggleFavorite);
 
-    </script>
+  </script>
 </body>
 
 </html>
