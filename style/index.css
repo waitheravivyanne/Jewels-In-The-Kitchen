@@ -4,16 +4,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  display:grid;
+  display: grid;
 }
 
 .container {
-
   @media screen and (min-width: 768px) {
-      .container {
-        grid-template-columns: repeat(4, 1fr);
-      }
+    .container {
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
 }
 
 /* Landing Page Styles */
@@ -30,6 +29,7 @@ nav {
   align-items: center;
   background-color: #69226f;
 }
+
 nav img {
   width: 30%;
   height: 30%;
@@ -39,7 +39,6 @@ nav h1 {
   font-size: 35px;
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 .hero {
@@ -73,7 +72,6 @@ nav h1 {
   border-radius: 4px;
 }
 
-
 #search-form {
   margin-bottom: 20px;
 }
@@ -94,9 +92,9 @@ nav h1 {
 }
 
 .recipe {
-  display:-webkit-inline-flex;
+  display: -webkit-inline-flex;
   align-items: center;
-  text-align:inherit;
+  text-align: inherit;
   cursor: pointer;
   border: 1px solid #ccc;
   padding: 10px;
@@ -113,8 +111,9 @@ nav h1 {
   font-size: 18px;
   margin: 0;
 }
+
 .recipe ingredients {
-  display:contents;
+  display: contents;
 }
 
 /* Footer Styles */
@@ -143,18 +142,7 @@ footer {
     align-items: center;
   }
 
-  nav h1 {
-    margin-bottom: 10px;
-  }
-
-  .hero h2 {
-    font-size: 24px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
+  
   .cta-button {
     font-size: 14px;
   }
@@ -171,6 +159,7 @@ footer {
     margin-bottom: 20px;
   }
 }
+
 .ingredients-box {
   background-color: #f0e3e3;
   padding: 10px;
@@ -183,31 +172,27 @@ footer {
   margin-bottom: 10px;
 }
 
-    .back-button {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 20px;
-      color: #fdf9f9;
-      text-decoration: none;
-    }
-    
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #fdf9f9;
+  text-decoration: none;
+}
 
-    .action-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px;
-      border: none;
-      background-color: transparent;
-      color: #000;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    
-    .action-button i {
-      margin-right: 4px;
-    }
-   
-    
-    
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.action-button i {
+  margin-right: 4px;
+}

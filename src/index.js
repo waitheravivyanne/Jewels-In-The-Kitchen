@@ -37,14 +37,12 @@ function fetchRecipes() {
         listItem.appendChild(recipeDetails);
 
         listItem.addEventListener('click', function () {
-          displayRecipeDetails(recipeDetails);
+          displayRecipeDetails(recipe);
         });
 
         recipeList.appendChild(listItem);
       });
     })
-
-
     .catch((error) => {
       console.log('Error fetching recipes:', error);
     });
@@ -58,7 +56,6 @@ function fetchFeaturedRecipe() {
       const recipe = data.recipes[0];
       data.recipes.shift();
 
-      
       featuredRecipe.querySelector('h4').textContent = recipe.name;
       featuredRecipe.querySelector('p').textContent = recipe.description;
       featuredRecipe.querySelector('img').setAttribute('src', recipe.image);
@@ -86,18 +83,34 @@ function fetchFeaturedRecipe() {
     });
 }
 
-function displayRecipeDetails(recipeDetails) {
-  recipeDetails.classList.toggle(`visible`);
+function displayRecipeDetails(recipe) {
+  // Show the recipe details in a modal or any other UI element
+  console.log('Recipe:', recipe);
+  // For example, you can use a modal to display the recipe details
+  const modal = document.getElementById('recipe-modal');
+  const modalTitle = modal.querySelector('.modal-title');
+  const modalDirections = modal.querySelector('.modal-directions');
 
+  modalTitle.textContent = recipe.name;
+  modalDirections.innerHTML = '';
+  recipe.instructions.forEach((step) => {
+    const directionItem = document.createElement('li');
+    directionItem.textContent = step;
+    modalDirections.appendChild(directionItem);
+  });
+
+  // Show the modal
+  modal.style.display = 'block';
 }
 
 function saveRecipe(recipe) {
   console.log('Recipe saved:', recipe);
 }
 
-function toggleFavourite(recipe, favouriteIcon) {
-  favouriteIcon.classList.toggle('fas');
-}
+// function toggleFavourite(recipe, favouriteIcon) {
+//   favouriteIcon.classList.toggle('fas');
+// }
+
 function removeDisplayedRecipe() {
   const recipeList = document.getElementById('recipes');
   const recipeItems = recipeList.getElementsByClassName('recipe');
@@ -107,7 +120,6 @@ function removeDisplayedRecipe() {
     recipeList.removeChild(recipeItems[0]);
   }
 }
-
 
 document.addEventListener('DOMContentLoaded', function () {
   removeDisplayedRecipe();
@@ -121,14 +133,18 @@ document.getElementById('search-form').addEventListener('submit', function (even
   const recipeList = document.getElementById('recipes');
   const recipes = recipeList.getElementsByClassName('recipe');
 
+  let foundRecipe = false;
+
   Array.from(recipes).forEach((recipe) => {
     const recipeName = recipe.querySelector('h4').textContent.toLowerCase();
     if (recipeName.includes(searchInput)) {
       recipe.style.display = 'block';
+      foundRecipe = true;
     } else {
       recipe.style.display = 'none';
     }
   });
+
   if (!foundRecipe) {
     alert('Recipe not found');
   }
