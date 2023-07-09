@@ -25,6 +25,7 @@ function fetchRecipes() {
         const recipeTitle = document.createElement('h4');
         recipeTitle.textContent = recipeName;
         recipeDetails.appendChild(recipeTitle);
+
         const directionsList = document.createElement('ol');
         directionsList.classList.add('directions');
         recipe.instructions.forEach((step) => {
@@ -33,6 +34,15 @@ function fetchRecipes() {
           directionsList.appendChild(directionItem);
         });
         recipeDetails.appendChild(directionsList);
+
+        const ingredientsList = document.createElement('ul');
+        ingredientsList.classList.add('ingredients');
+        recipe.ingredients.forEach((ingredient) => {
+          const ingredientItem = document.createElement('li');
+          ingredientItem.textContent = ingredient;
+          ingredientsList.appendChild(ingredientItem);
+        });
+        recipeDetails.appendChild(ingredientsList);
 
         listItem.appendChild(recipeDetails);
 
@@ -89,9 +99,17 @@ function displayRecipeDetails(recipe) {
   // For example, you can use a modal to display the recipe details
   const modal = document.getElementById('recipe-modal');
   const modalTitle = modal.querySelector('.modal-title');
+  const modalIngredients = modal.querySelector('.modal-ingredients');
   const modalDirections = modal.querySelector('.modal-directions');
 
   modalTitle.textContent = recipe.name;
+  modalIngredients.innerHTML = '';
+  recipe.ingredients.forEach((ingredient) => {
+    const ingredientItem = document.createElement('li');
+    ingredientItem.textContent = ingredient;
+    modalIngredients.appendChild(ingredientItem);
+  });
+
   modalDirections.innerHTML = '';
   recipe.instructions.forEach((step) => {
     const directionItem = document.createElement('li');
@@ -103,22 +121,9 @@ function displayRecipeDetails(recipe) {
   modal.style.display = 'block';
 }
 
-function saveRecipe(recipe) {
-  console.log('Recipe saved:', recipe);
-}
-
-// function toggleFavourite(recipe, favouriteIcon) {
-//   favouriteIcon.classList.toggle('fas');
-// }
-
 function removeDisplayedRecipe() {
   const recipeList = document.getElementById('recipes');
-  const recipeItems = recipeList.getElementsByClassName('recipe');
-
-  // Remove the first item from the list
-  if (recipeItems.length > 0) {
-    recipeList.removeChild(recipeItems[0]);
-  }
+  recipeList.innerHTML = '';
 }
 
 document.addEventListener('DOMContentLoaded', function () {
